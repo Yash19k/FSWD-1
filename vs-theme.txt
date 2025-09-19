@@ -1,0 +1,5 @@
+sonarcube for ide
+prettier
+live server
+Microsoft edge tool for vs code
+palenight theme
