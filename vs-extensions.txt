@@ -1,0 +1,11 @@
+sonarcube for ide
+prettier
+live server
+Microsoft edge tool for vs code
+palenight theme
+HTML CSS Support
+Auto Rename Tag 
+
+Chrome Extensions
+Color picker
+Font Detector

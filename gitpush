@@ -1,0 +1,107 @@
+✅ Step-by-Step Guide to Push Your Project to GitHub
+1. Navigate to Your Project Directory
+
+Open your terminal or command prompt and change to your project directory:
+
+cd path/to/your/project
+
+
+Replace path/to/your/project with the actual path to your project folder.
+
+2. Initialize a Git Repository (If Not Already Done)
+
+If your project isn't already a Git repository, initialize it:
+
+git init
+
+3. Add Your Files to the Staging Area
+
+Stage all the files in your project for commit:
+
+git add .
+
+
+This command stages all changes in your project directory.
+
+4. Commit Your Changes
+
+Commit the staged files with a meaningful message:
+
+git commit -m "Initial commit"
+
+5. Add the Remote Repository
+
+Link your local repository to your GitHub repository:
+
+git remote add origin https://github.com/Yash19k/FSWD-1.git
+
+6. Push Your Changes to GitHub
+
+Push your local commits to the main branch of your GitHub repository:
+
+git push -u origin main
+
+
+If your default branch is named master, replace main with master.
+
+⚠️ Handling Potential Errors
+
+If you encounter the error:
+
+! [rejected] main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Yash19k/FSWD-1.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+
+
+This indicates that the remote repository has commits that your local repository doesn't have. To resolve this:
+
+Pull the Latest Changes from GitHub:
+
+git pull origin main --allow-unrelated-histories
+
+
+This command fetches and merges the changes from the remote repository into your local repository.
+
+Resolve Any Merge Conflicts:
+
+If there are merge conflicts, Git will notify you. Open the conflicting files, resolve the conflicts, and then stage the resolved files:
+
+git add .
+
+
+Commit the Merge:
+
+After resolving conflicts, commit the merge:
+
+git commit -m "Resolved merge conflicts"
+
+
+Push the Changes to GitHub:
+
+Finally, push your changes:
+
+git push origin main
+
+🔄 Future Workflow
+
+To keep your local and remote repositories synchronized:
+
+Pull the Latest Changes Before Starting Work:
+
+git pull origin main
+
+
+Make Your Changes Locally.
+
+Stage and Commit Your Changes:
+
+git add .
+git commit -m "Describe your changes"
+
+
+Push Your Changes to GitHub:
+
+git push origin main
