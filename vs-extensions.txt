@@ -9,3 +9,5 @@ Auto Rename Tag
 Chrome Extensions
 Color picker
 Font Detector
+
+word wrap(Alt + Z) - make the content in the screen 
