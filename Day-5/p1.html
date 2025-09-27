@@ -1,0 +1,88 @@
+<!-- 
+    Value - Default Value
+    required - 
+    autofocus - automticlly take the cursor there
+    autocomplete
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>User Dteails</legend>
+            <label for="name">Name : </label>
+            <input type="text" name="name" id="name" value="" placeholder="Enter Your Name" autofocus autocomplete="on" minlength="2" maxlength="20" required>
+            <br><br>
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" value="" placeholder="Enter Your password" autofocus>
+            <br><br>
+            <label for="email">Email : </label>
+            <input type="email" name="email" id="email" value="" placeholder="Enter Your email" autofocus>
+            <br><br>
+            <label for="phone">Phone : </label>
+            <input type="tel" name="phone" id="phone" value="" placeholder="Enter Your phone no." autofocus>
+            <br><br>
+            <label for="gender">Gender :</label>
+            <input type="radio" name="gender" id="male" value="Male">Male
+            <input type="radio" name="gender" id="female" value="Female">Female
+            <br><br>
+            <label for="hobby">Hobbies :</label>
+            <input type="checkbox" name="hobby" id="" value="music">Music
+            <input type="checkbox" name="hobby" id="" value="dance">Dance
+            <br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Data</legend>
+            <label for="dob">DOB :</label>
+            <input type="date" name="dob" id="" min="2000-01-01" max="2030-01-01">
+            <br><br>
+            <label for="age">Age :</label>
+            <input type="number" name="age" min="0" max="110" id="age" step="1" placeholder="Enter Age">
+            <br><br>
+            <label for="fav">Favorites</label>
+            <input type="color" name="fav" value="#0000FF" id="fav">
+            <br><br>
+            <label for="spo">Prerferred Sports</label>
+            <input list="sports" name="sports">
+            <datalist id="sports">
+                <option value="Cricket"></option>
+                <option value="Hockey"></option>
+                <option value="Football"></option>
+            </datalist>
+            <br><br>
+            <label for="branch">Select Branch :</label>
+            <select name="branch" id="">
+                <option value="select" selected disabled>
+                    <optgroup label="comp">
+                        <option value="ce">CE</option>
+                        <option value="it">IT</option>
+                    </optgroup>
+                    <optgroup label="others">
+                        <option value="ec">EC</option>
+                        <option value="ci">Civil</option>
+                    </optgroup>
+                </option>
+            </select>
+            <br><br>
+            <label for="remark">Remark :</label>
+            <textarea name="remark" id="remark" cols="30" rows="1">Enter Text</textarea>
+            <br><br>
+            <label for="range">Range</label>
+            <input type="range" name="range" id="range" min="1" max="100" step="5">
+            <br><br>
+            <input type="file" name="file" id="file" accept=".pdf,.doc" multiple en>
+        </fieldset>
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
